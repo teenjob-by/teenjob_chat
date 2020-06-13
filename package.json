@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/teenjob-by/teenjob_chat#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.1.0"
   },
   "devDependencies": {
     "@types/node": "^14.0.13",
