@@ -2,16 +2,12 @@ import * as express from "express";
 import * as socketIO from "socket.io";
 import { createServer } from "http";
 
-const app = express();
+const server = createServer(express());
 
-const io = socketIO(createServer(app));
+const io = socketIO(server);
 
-io.on("connect", (socket) => {
+io.on("connection", (socket) => {
   console.log("Connected");
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
-export default app;
+export default server;
