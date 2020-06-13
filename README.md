@@ -1,2 +1,2 @@
 # teenjob_chat
-chat development!
+Chat server application
